@@ -1,0 +1,3 @@
+Idx	Ratio	Train	Val	Name
+1	0.8	800	200	polyp
+
