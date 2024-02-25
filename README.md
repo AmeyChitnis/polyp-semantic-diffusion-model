@@ -8,7 +8,7 @@ Please refer to the original [Paper](https://arxiv.org/abs/2207.00050) for more 
 
 &nbsp;
 
-<img src='linear_1000_8.png' align="left">
+<img src='assets\linear_1000_8.png' align="left">
 
 &nbsp;
 
