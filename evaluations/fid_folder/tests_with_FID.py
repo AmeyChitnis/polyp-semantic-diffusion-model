@@ -108,7 +108,7 @@ def get_activations(files, model, batch_size=50, dims=2048,
                   end='', flush=True)
         start = i * batch_size
         end = start + batch_size
-        images = np.array([resize(imread(str(f)).astype(np.float32), (256, 256, 3))
+        images = np.array([resize(imread(str(f)).astype(np.float32), (128, 128, 3))
                           for f in files[start:end]])
 
         # Reshape to (n_images, 3, height, width)
@@ -267,9 +267,9 @@ if __name__ == '__main__':
     #args = parser.parse_args()
     os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 
-    path1 = "./results/real_B/"
-    path2 = "./results/fake_B/"
-    batch_size = 50
+    path1 = "./RESULTS/blinear_500_81/images"
+    path2 = "./RESULTS/blinear_500_81/samples"
+    batch_size = 200
     dims = 2048
 
     fid_value = calculate_fid_given_paths([path1, path2],

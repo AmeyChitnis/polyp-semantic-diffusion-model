@@ -139,7 +139,7 @@ class ImageDataset(Dataset):
             pil_image = Image.open(f)
             pil_image.load()
         pil_image = pil_image.convert("RGB")
-        print(path)
+        #print(path)
         out_dict = {}
         class_path = self.local_classes[idx]
         with bf.BlobFile(class_path, "rb") as f:
@@ -201,7 +201,7 @@ class ImageDataset(Dataset):
 
         if arr_instance is not None:
             out_dict['instance'] = arr_instance[None, ]
-        print("Working")
+        #print("Working")
         return np.transpose(arr_image, [2, 0, 1]), out_dict
 
 
