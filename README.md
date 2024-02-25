@@ -1,5 +1,7 @@
-# Semantic Image Synthesis via Diffusion Models (SDM)
 
+
+#This work is based on [Semantic Image Synthesis via Diffusion Models (SDM)](https://github.com/WeilunWang/semantic-diffusion-model)
+Please refer to the original [Paper](https://arxiv.org/abs/2207.00050) for more information.
 &nbsp;
 
 <img src='assets\results.png' align="left">  
