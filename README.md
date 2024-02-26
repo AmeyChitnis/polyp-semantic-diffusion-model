@@ -12,6 +12,17 @@ Please refer to the original [Paper](https://arxiv.org/abs/2207.00050) for more 
 
 &nbsp;
 
+To generate the above result, please use the checkpoint file from the [google drive](https://drive.google.com/drive/folders/1mVQOwUrex2EpTqc8fak1972B7Il_nLNO?usp=sharing)
+
+- Generate the images with following:
+
+```bash
+python3 image_sample.py --data_dir ./data/polyp_folder --dataset_mode custom_dataset --attention_resolutions 32,16,8 --diffusion_steps 1000 \
+                                    --image_size 128 --learn_sigma True --noise_schedule linear --num_channels 256 --num_head_channels 64 \ 
+                                    --num_res_blocks 2 --resblock_updown True --use_fp16 True --use_scale_shift_norm True --num_classes 2 \
+                                    --class_cond True --no_instance True --batch_size 4 --num_samples 200 --s 1.5 \
+                                    --model_path OUTPUT/linear_1000_8/model020000.pt --results_path RESULTS/linear_1000_8
+```
 ### [Paper](https://arxiv.org/abs/2207.00050)
 
 [Weilun Wang](https://scholar.google.com/citations?hl=zh-CN&user=YfV4aCQAAAAJ), [Jianmin Bao](https://scholar.google.com/citations?hl=zh-CN&user=hjwvkYUAAAAJ), [Wengang Zhou](https://scholar.google.com/citations?hl=zh-CN&user=8s1JF8YAAAAJ), [Dongdong Chen](https://scholar.google.com/citations?hl=zh-CN&user=sYKpKqEAAAAJ), [Dong Chen](https://scholar.google.com/citations?hl=zh-CN&user=_fKSYOwAAAAJ), [Lu Yuan](https://scholar.google.com/citations?hl=zh-CN&user=k9TsUVsAAAAJ), [Houqiang Li](https://scholar.google.com/citations?hl=zh-CN&user=7sFMIKoAAAAJ),
